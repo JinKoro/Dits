@@ -2,7 +2,6 @@ package com.devincubator.project.hibernate.repository;
 
 import com.devincubator.project.hibernate.model.Test;
 import com.devincubator.project.hibernate.repository.abstracts.CrudRepository;
-
 import java.util.ArrayList;
 import java.util.List;
 

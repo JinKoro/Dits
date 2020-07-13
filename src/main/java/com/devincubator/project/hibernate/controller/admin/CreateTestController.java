@@ -9,11 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import java.util.List;
 
 @Controller
+@RequestMapping("/admin")
 public class CreateTestController {
 
     private TopicService topicService;
@@ -41,8 +42,6 @@ public class CreateTestController {
         this.questionService = questionService;
     }
 
-
-
     @GetMapping("/createTest")
     public String createTest(Model model){
         model.addAttribute("topics",topicService.getNamesTopics());
@@ -64,7 +63,7 @@ public class CreateTestController {
         model.addAttribute("topics",nameTopics);
         model.addAttribute("tests",nameTests);
         model.addAttribute("questions",nameQuestions);
-        model.addAttribute("success","Добавлен вопрос "+completed.toString());
+        model.addAttribute("success","Добавлен вопрос "+nameQuestion+" в тест "+nameTest);
 
         return "admin/createTest";
     }

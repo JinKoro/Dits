@@ -3,7 +3,6 @@ package com.devincubator.project.hibernate.model;
 import com.devincubator.project.hibernate.model.abstracts.EntityAbstract;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
-
 import javax.persistence.*;
 import java.util.Objects;
 import java.util.Set;
@@ -94,8 +93,6 @@ public class Question extends EntityAbstract {
 
     @Override
     public String toString() {
-        return "Question{" +
-                ", description='" + description + '\'' +
-                '}';
+        return  description ;
     }
 }

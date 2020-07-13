@@ -1,8 +1,6 @@
 package com.devincubator.project.hibernate.model;
 
-
 import com.devincubator.project.hibernate.model.abstracts.EntityAbstract;
-
 import javax.persistence.*;
 import java.util.Objects;
 

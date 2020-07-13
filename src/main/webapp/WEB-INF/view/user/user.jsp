@@ -15,10 +15,10 @@
     <link rel="stylesheet" type="text/css" href="/style/button.css">
 </head>
 <body>
-    <a href="<c:url value="/logout"/>">Log off</a>
-    <h1>Hello ${user}</h1>
-
-
+    <div class="somefont">
+        <h1>Hello ${user}</h1>
+        <a href="<c:url value="/logout"/>">Log off</a>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

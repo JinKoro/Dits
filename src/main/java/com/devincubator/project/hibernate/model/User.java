@@ -4,7 +4,6 @@ import com.devincubator.project.hibernate.model.abstracts.EntityAbstract;
 import com.devincubator.project.hibernate.model.enums.RoleName;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
-
 import javax.persistence.*;
 import java.util.*;
 
@@ -15,7 +14,8 @@ public class User extends EntityAbstract {
     private String lastName;
     private String login;
     private String password;
-    private RoleName nameRole;
+    private String nameRole;
+    private String email;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "userRole", joinColumns = @JoinColumn(name = "userId", referencedColumnName = "id"),
@@ -38,9 +38,23 @@ public class User extends EntityAbstract {
         this.roles.addAll(Arrays.asList(roles));
     }
 
+    public String getEmail() {
+        return email;
+    }
 
-    public RoleName getNameRole() {
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFIO(){
+        return lastName+" "+firstName;
+    }
+    public String getNameRole() {
         return nameRole;
+    }
+
+    public void setNameRole(String nameRole) {
+        this.nameRole = nameRole;
     }
 
     public String getFirstName() {
@@ -90,6 +104,20 @@ public class User extends EntityAbstract {
         this.roles.addAll(Arrays.asList(roles));
     }
 
+    public Role setRoleByNameRole(String nameRole){
+        Role roleByNameRole = new Role();
+        if(nameRole.contains("ROLE_ADMIN")){
+            roleByNameRole.setId(1);
+            roleByNameRole.setName(RoleName.ROLE_ADMIN);
+        }else if(nameRole.contains("ROLE_USER")){
+            roleByNameRole.setId(3);
+            roleByNameRole.setName(RoleName.ROLE_USER);
+        }else{
+            roleByNameRole.setId(2);
+            roleByNameRole.setName(RoleName.ROLE_TUTOR);
+        }
+        return roleByNameRole;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

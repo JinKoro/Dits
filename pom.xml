@@ -158,6 +158,20 @@
       <artifactId>spring-security-config</artifactId>
       <version>5.3.0.RELEASE</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>javax.mail</artifactId>
+      <version>1.5.4</version>
+    </dependency>
+
   </dependencies>
 
   <build>

@@ -10,9 +10,21 @@
     border-style: solid;
     border-radius: 20px;
 }
+
 .css-input:focus{
     outline: none;
 }
 ::placeholder{
     color: #4e82be;
+}
+
+
+input[type=checkbox] {
+    display: none;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px rgba(0,1,255, .2);
+    font-size: 15px;
+    color: #5592bb;
+    text-align: center;
+    line-height: 15px;
 }

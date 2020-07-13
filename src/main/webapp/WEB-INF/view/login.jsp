@@ -10,12 +10,13 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
-    <title>Login</title>
+    <title>Логин</title>
     <meta charset="UTF-8">
         <style>
             <%@include file='/style/input.css' %>
             <%@include file='/style/button.css'%>
             <%@include file="/style/mycont.css"%>
+            <%@include file="/style/bootstrap.min.css"%>
         </style>
 </head>
 <body>
@@ -41,6 +42,7 @@
             </div>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <button class="myButton" type="submit">Войти</button>
+
         </form>
     </div>
 </div>

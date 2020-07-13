@@ -6,7 +6,6 @@ import com.devincubator.project.hibernate.service.api.TestService;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service("testService")

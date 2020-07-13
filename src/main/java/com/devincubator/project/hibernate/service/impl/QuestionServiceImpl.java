@@ -2,13 +2,10 @@ package com.devincubator.project.hibernate.service.impl;
 
 import com.devincubator.project.hibernate.model.Question;
 import com.devincubator.project.hibernate.model.Test;
-import com.devincubator.project.hibernate.model.Topic;
 import com.devincubator.project.hibernate.service.api.QuestionService;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Service("questionService")

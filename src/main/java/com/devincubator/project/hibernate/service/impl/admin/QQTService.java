@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class QQTService implements TtqService {
+
     private TopicService topicService;
     private TestService testService;
     private QuestionService questionService;
@@ -41,6 +42,17 @@ public class QQTService implements TtqService {
         return question ;
     }
 
+  /*  @Transactional
+    public Topic createNewTopic(String nameTopic){
+        return topicService.createTopicByName(nameTopic);
+    }
+
+    @Transactional
+    public Test createNewTest(String nameTopic,String nameTest){
+        Topic topic = topicService.createTopicByName(nameTopic);
+        Test test = testService.createTestByName(nameTest,topic);
+        return test;
+    }*/
 
     private SessionFactory sessionFactory;
 

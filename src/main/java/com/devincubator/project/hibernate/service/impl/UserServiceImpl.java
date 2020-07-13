@@ -4,15 +4,12 @@ import com.devincubator.project.hibernate.model.User;
 import com.devincubator.project.hibernate.service.api.UserService;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
     private SessionFactory sessionFactory;
-
 
     @Autowired
     public void setSessionFactory(SessionFactory sessionFactory) {
@@ -35,7 +32,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User gerByName(String login) {
+    public User getByName(String login) {
         return getByName(User.class,login);
     }
 

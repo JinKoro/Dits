@@ -10,11 +10,22 @@
 
 <html>
 <head>
-    <title>Denied</title>
+    <title>Нет доступа</title>
+    <style>
+        <%@include file='/style/input.css' %>
+        <%@include file='/style/button.css'%>
+        <%@include file="/style/mycont.css"%>
+        <%@include file="/style/bootstrap.min.css"%>
+    </style>
 </head>
 <body>
-<h1>Access Denied</h1>
-<a href="<c:url value="/login"/>">Log in</a>
+<div class="col">
+    <div class="mycont">
+            <img src="https://sun1.dataix-by-minsk.userapi.com/7FZeCz388oMsJq8e42jjCwqgCrydNmynGJZtxw/mQx338ichdA.jpg"  alt="">
+            <h1>В доступе отказано</h1>
+            <a href="<c:url value="/logout"/>">Логин</a>
+    </div>
+</div>
 
 </body>
 </html>

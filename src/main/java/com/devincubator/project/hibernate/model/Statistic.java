@@ -1,8 +1,6 @@
 package com.devincubator.project.hibernate.model;
 
-
 import com.devincubator.project.hibernate.model.abstracts.EntityAbstract;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
@@ -17,14 +15,16 @@ public class Statistic extends EntityAbstract {
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
     private boolean correct;
+    private Integer userId;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {MERGE, PERSIST, REFRESH, DETACH})
-    @JoinColumn(name = "questionId", nullable = false)
+    @JoinColumn(name = "questionId", nullable = false,insertable=false, updatable=false)
     private Question question;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {MERGE, PERSIST, REFRESH, DETACH})
-    @JoinColumn(name = "userId", nullable = false)
+    @JoinColumn(name = "userId", nullable = false,insertable=false, updatable=false)
     private User user;
+    private Integer questionId;
 
     public Statistic() {
     }
@@ -36,11 +36,27 @@ public class Statistic extends EntityAbstract {
         this.user = user;
     }
 
+    public Integer getQuestionId() {
+        return questionId;
+    }
+
+    public void setQuestionId(Integer questionId) {
+        this.questionId = questionId;
+    }
+
     public Date getDate() {
         return date;
     }
 
     public void setDate(Date date) {
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public boolean isCorrect() {

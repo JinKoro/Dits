@@ -1,6 +1,5 @@
 package com.devincubator.project.hibernate.repository.abstracts;
 
-import com.devincubator.project.hibernate.model.abstracts.EntityAbstract;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

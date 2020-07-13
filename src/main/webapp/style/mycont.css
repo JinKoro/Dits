@@ -10,11 +10,49 @@
 .margin-top8{
     margin-top: 8%;
 }
+.margin-top10{
+    margin-top: 10px;
+}
+.margin-top20{
+    margin-top: 20%;
+}
+.margin-top39{
+    margin-top:-39px;
+}
+.margin-top25{
+    margin-top: 25%;
+}
+.margin-top30{
+    margin-top: 30%;
+}
+.margin-top40{
+    margin-top: 40%;
+}
+.margin-top128{
+    margin-top: 128px;
+}
+.margin-top58{
+    margin-top:58px
+}
+.margin-top185{
+    margin-top:185px;
+}
 .somefont{
     font-family: "Comic Sans MS",cursive,sans-serif;
     font-size: 30px;
     letter-spacing: 2px;
     word-spacing: 2px;
     color: #4e82be;
+    font-weight: 400;
+}
+a{
+    font-size: 24px;
+    transition: color .1s linear;
+    outline: none;
+}
+a:hover{
+    color: #476e9e;
+    outline: none;
+    text-decoration: none;
 }
 

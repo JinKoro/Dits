@@ -2,7 +2,6 @@ package com.devincubator.project.hibernate.model;
 
 import com.devincubator.project.hibernate.model.abstracts.EntityAbstract;
 import com.devincubator.project.hibernate.model.enums.RoleName;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
@@ -52,9 +51,6 @@ public class Role extends EntityAbstract {
 
     @Override
     public String toString() {
-        return "Role{" +
-                super.toString() +
-                ", name='" + name + '\'' +
-                '}';
+        return name;
     }
 }
