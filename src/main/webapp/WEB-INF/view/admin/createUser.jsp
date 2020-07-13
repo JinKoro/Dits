@@ -25,7 +25,7 @@
 
 <div class="row">
 <div class="col-xs-5 col-xs-offset-1">
-    <div class="mycont">
+    <div class="mycont pic">
         <div class="margin-top20">
             <img src="https://sun1.dataix-by-minsk.userapi.com/7FZeCz388oMsJq8e42jjCwqgCrydNmynGJZtxw/mQx338ichdA.jpg"
                  alt="человечек">
@@ -72,7 +72,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <form:input path="email" type="email" class="css-input" placeholder="address@gmail.com"
+                            <form:input path="email" type="email" class="css-input" placeholder="yourmail@gmail.com"
                                         required="true"/>
                         </td>
                     </tr>
@@ -89,7 +89,7 @@
 </div>
 
 <div class="row">
-<table class="blueTable">
+<table class="blueTable" >
     <thead>
     <tr>
         <th>Имя</th>
@@ -105,8 +105,8 @@
             <td>${user.getLastName()}</td>
             <td>${user.getNameRole()}</td>
             <td>
-                <a href="/admin/edit/${user.id}">Изменить</a>
-                <a href="/admin/delete/${user.id}">Удалить</a>
+                <a href="/admin/edit/${user.id}" style="text-decoration: none">Изменить</a>
+                <a href="/admin/delete/${user.id}" style="text-decoration: none">Удалить</a>
             </td>
         </tr>
     </c:forEach>
@@ -114,7 +114,7 @@
 </table>
 </div>
 
-<div class="mycont">
+<div class="mycont somefont">
     <p id="success"><a style="color:green;font-size:120%;">${success}</a></p>
 
     <form action="/admin">

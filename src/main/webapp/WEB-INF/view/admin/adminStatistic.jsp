@@ -34,17 +34,17 @@
             <table>
                 <tr>
                     <td>
-                        <a href="<c:url value= "/admin/testStatistic" />">Статистика по тесту</a>
+                        <a href="<c:url value= "/admin/testStatistic" />" style="text-decoration: none">Статистика по тесту</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    <a href="<c:url value="/admin/questionStatistic"/>">Статистика по вопросам</a>
+                    <a href="<c:url value="/admin/questionStatistic"/>" style="text-decoration: none">Статистика по вопросам</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="<c:url value="/admin/userTestStatistic"/>">Статистика по пользователям</a>
+                        <a href="<c:url value="/admin/userTestStatistic"/>" style="text-decoration: none">Статистика по пользователям</a>
                     </td>
                 </tr>
                 <tr>

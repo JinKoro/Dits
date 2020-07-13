@@ -40,17 +40,17 @@
             <table>
                 <tr>
                     <td>
-                        <a href="<c:url value= "/admin/createTest" />">Создать тест</a>
+                        <a href="<c:url value= "/admin/createTest" />" style="text-decoration: none">Создать тест</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="<c:url value="/admin/adminStatistic"/>">Статистика</a>
+                        <a href="<c:url value="/admin/adminStatistic"/>" style="text-decoration: none">Статистика</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="<c:url value="/admin/createUser"/>">Создать пользователя</a>
+                        <a href="<c:url value="/admin/createUser"/>" style="text-decoration: none">Создать пользователя</a>
                     </td>
                 </tr>
             </table>

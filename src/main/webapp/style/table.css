@@ -4,14 +4,14 @@ table.blueTable{
     width: 80%;
     text-align: center;
     border-collapse: collapse;
-    border-spacing: 3px;
     margin-top: 50px;
-    margin-bottom: 20pxgit ;
+    margin-bottom: 20px ;
+
 }
 table.blueTable td,table.blueTable th{
-    border: 0px solid #AAAAAA;
+    border: 2px solid #ffffff;
     padding: 10px 2px;
-    border-spacing: 10px;
+
 
 }
 table.blueTable tbody td{
@@ -42,4 +42,7 @@ table.blueTable thead th{
 }
 thead.blueTable thead th:first-child{
     border-left: none;
+}
+th,td {
+    border-width: 5px;
 }
