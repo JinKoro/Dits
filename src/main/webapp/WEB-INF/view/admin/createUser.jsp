@@ -72,13 +72,12 @@
                     </tr>
                     <tr>
                         <td>
-                            <form:input path="email" type="email" class="css-input" placeholder="yourmail@gmail.com"
-                                        required="true"/>
+                            <form:input path="email" type="email" class="css-input" placeholder="yourmail@gmail.com"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" class="myButton" placeholder="Сохранить пользователя"/>
+                            <input type="submit" class="myButton" value="Сохранить"/>
                         </td>
                     </tr>
                 </table>

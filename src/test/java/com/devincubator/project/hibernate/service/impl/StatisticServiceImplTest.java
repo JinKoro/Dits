@@ -36,7 +36,7 @@ public class StatisticServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void add() {
-        Role role3 = new Role(RoleName.ROLE_USER);
+        Role role3 = new Role(RoleName.USER);
         role3.setId(3);
         User user3 = new User("User", "Userovic", "user", "userPassword"
                 , role3);
@@ -70,7 +70,7 @@ public class StatisticServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void update() {
-        Role role3 = new Role(RoleName.ROLE_USER);
+        Role role3 = new Role(RoleName.USER);
         role3.setId(3);
         User user3 = new User("User", "Userovic", "user", "userPassword"
                 , role3);
@@ -91,7 +91,7 @@ public class StatisticServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void delete() throws ParseException {
-        Role role3 = new Role(RoleName.ROLE_USER);
+        Role role3 = new Role(RoleName.USER);
         role3.setId(3);
         User user3 = new User("User", "Userovic", "user", "userPassword"
                 , role3);

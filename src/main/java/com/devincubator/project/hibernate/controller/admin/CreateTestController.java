@@ -63,7 +63,7 @@ public class CreateTestController {
         model.addAttribute("topics",nameTopics);
         model.addAttribute("tests",nameTests);
         model.addAttribute("questions",nameQuestions);
-        model.addAttribute("success","Добавлен вопрос "+nameQuestion+" в тест "+nameTest);
+        model.addAttribute("success","Добавлен вопрос \""+nameQuestion+"\" в тест "+nameTest);
 
         return "admin/createTest";
     }

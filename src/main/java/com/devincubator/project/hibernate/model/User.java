@@ -106,15 +106,15 @@ public class User extends EntityAbstract {
 
     public Role setRoleByNameRole(String nameRole){
         Role roleByNameRole = new Role();
-        if(nameRole.contains("ROLE_ADMIN")){
+        if(nameRole.contains("ADMIN")){
             roleByNameRole.setId(1);
-            roleByNameRole.setName(RoleName.ROLE_ADMIN);
-        }else if(nameRole.contains("ROLE_USER")){
+            roleByNameRole.setName(RoleName.ADMIN);
+        }else if(nameRole.contains("USER")){
             roleByNameRole.setId(3);
-            roleByNameRole.setName(RoleName.ROLE_USER);
+            roleByNameRole.setName(RoleName.USER);
         }else{
             roleByNameRole.setId(2);
-            roleByNameRole.setName(RoleName.ROLE_TUTOR);
+            roleByNameRole.setName(RoleName.TUTOR);
         }
         return roleByNameRole;
     }

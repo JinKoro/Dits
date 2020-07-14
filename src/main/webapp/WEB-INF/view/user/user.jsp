@@ -7,19 +7,53 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>User</title>
-    <link rel="stylesheet" type="text/css" href="/style/mycont.css">
-    <link rel="stylesheet" type="text/css" href="/style/input.css">
-    <link rel="stylesheet" type="text/css" href="/style/button.css">
+    <style>
+        <%@include file='/style/input.css' %>
+        <%@include file='/style/button.css' %>
+        <%@include file="/style/mycont.css" %>
+        <%@include file="/style/bootstrap.min.css" %>
+    </style>
 </head>
 <body>
-    <div class="somefont">
-        <h1>Hello ${user}</h1>
-        <a href="<c:url value="/logout"/>">Log off</a>
+
+<div class="somefont">
+    <h1>Привет ${user}!</h1>
+</div>
+<div class="col-xs-5 col-xs-offset-1">
+    <div class="mycont">
+        <div class="margin-top58">
+            <img src="https://sun1.dataix-by-minsk.userapi.com/7FZeCz388oMsJq8e42jjCwqgCrydNmynGJZtxw/mQx338ichdA.jpg"
+                 alt="">
+        </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+</div>
+
+<div class="col-xs-5 col-xs-offset-1">
+    <div class="mycont">
+        <div class="margin-top185">
+            <table>
+                <tr>
+                    <td>
+                        <a href="<c:url value= "" />" style="text-decoration: none">Выбрать тест</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/logout">
+                            <input class="myButton"  type="submit" value="Выйти">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

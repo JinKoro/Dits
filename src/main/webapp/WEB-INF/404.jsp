@@ -39,7 +39,7 @@
     <div class="mycont">
             <img src="https://sun1.dataix-by-minsk.userapi.com/hdlGkkRg9wxogWr0a2QldZR_TFiqk-LZW-FROg/EjiM2NPVx-8.jpg" weight="442" height="462" alt="human">
         <p>Упс! Что-то пошло не так</p>
-        <a href="<c:url value="/login"/>"><p>Логин</p></a>
+        <a href="<c:url value="/logout"/>"><p>Логин</p></a>
     </div>
 </div>
 </body>

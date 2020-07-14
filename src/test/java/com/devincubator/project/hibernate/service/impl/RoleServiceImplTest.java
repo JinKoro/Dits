@@ -31,7 +31,7 @@ public class RoleServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void getById() {
-        Role expected = new Role(RoleName.ROLE_USER);
+        Role expected = new Role(RoleName.USER);
         Role actual = roleService.getById(3);
         assertEquals(expected, actual);
     }
@@ -45,16 +45,16 @@ public class RoleServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test(expectedExceptions = UnsupportedOperationException.class)
     public void add() {
-        roleService.add(new Role(RoleName.ROLE_ADMIN));
+        roleService.add(new Role(RoleName.ADMIN));
     }
 
     @Test(expectedExceptions = UnsupportedOperationException.class)
     public void update() {
-        roleService.update(new Role(RoleName.ROLE_USER));
+        roleService.update(new Role(RoleName.USER));
     }
 
     @Test(expectedExceptions = UnsupportedOperationException.class)
     public void delete() {
-        roleService.delete(new Role(RoleName.ROLE_TUTOR));
+        roleService.delete(new Role(RoleName.TUTOR));
     }
 }

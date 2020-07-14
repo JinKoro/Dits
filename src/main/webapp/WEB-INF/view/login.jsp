@@ -26,12 +26,12 @@
         <form action="${loginUrl}" method="post" class="form-signin">
             <c:if test="${param.error!=null}" >
                 <div class="alert alert-danger">
-                    <p>Invalid username and password.</p>
+                    <p>Неверный логин или пароль</p>
                 </div>
             </c:if>
             <c:if test="${param.logout!=null}">
                 <div class="alert alert-success">
-                    <p>You have been logged out successfully.</p>
+                    <p>Вы успешно вышли из системы</p>
                 </div>
             </c:if>
             <div>

@@ -14,9 +14,9 @@
 .css-input:focus{
     outline: none;
 }
-::placeholder{
+/*::placeholder{
     color: #4e82be;
-}
+}*/
 
 
 input[type=checkbox] {
@@ -29,6 +29,3 @@ input[type=checkbox] {
     line-height: 15px;
 }
 
-input::placeholder{
-    color:#eeeeee ;
-}

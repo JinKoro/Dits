@@ -34,7 +34,7 @@ public class UserServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void add() {
-        Role role3 = new Role(RoleName.ROLE_USER);
+        Role role3 = new Role(RoleName.USER);
         role3.setId(3);
         User expected = new User("Sam", "Samoilov", "Samson", "samSamsam"
                 , role3);
@@ -44,7 +44,7 @@ public class UserServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void getById() {
-        Role role3 = new Role(RoleName.ROLE_USER);
+        Role role3 = new Role(RoleName.USER);
         role3.setId(3);
         User expected = new User("User", "Userovic", "user", "userPassword"
                 , role3);
@@ -54,7 +54,7 @@ public class UserServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void update() {
-        Role role2 = new Role(RoleName.ROLE_TUTOR);
+        Role role2 = new Role(RoleName.TUTOR);
         role2.setId(2);
         User expected = new User("Ментор", "Менторович", "ментор", "менторПароль"
                 , role2);
@@ -65,7 +65,7 @@ public class UserServiceImplTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void delete() {
-        Role role3 = new Role(RoleName.ROLE_USER);
+        Role role3 = new Role(RoleName.USER);
         role3.setId(3);
         User user = new User("User", "Userovic", "user", "userPassword"
                 , role3);
